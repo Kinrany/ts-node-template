@@ -1,6 +1,7 @@
 import { RouteHandlerMethod } from 'fastify';
 import { string, type } from 'io-ts';
 import * as Users from '../Users';
+import { decodeOrThrow } from '../utils';
 
 const requestC = type({
     params: type({
@@ -9,12 +10,9 @@ const requestC = type({
 });
 
 export const GetUser: RouteHandlerMethod = async (request, reply): Promise<Users.User> => {
-    if (!requestC.is(request)) {
-        reply.code(400);
-        throw undefined;
-    }
+    const parsedRequest = decodeOrThrow(requestC, request, () => reply.status(400));
 
-    const user = await Users.get(request.params.id);
+    const user = await Users.get(parsedRequest.params.id);
     if (user) {
         return user;
     }

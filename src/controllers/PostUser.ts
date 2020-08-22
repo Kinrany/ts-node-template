@@ -1,8 +1,7 @@
 import { RouteHandlerMethod } from 'fastify';
 import { exact, number, string, type } from 'io-ts';
-import { isLeft} from 'fp-ts/lib/Either';
 import * as Users from '../Users';
-import reporter from 'io-ts-reporters';
+import { decodeOrThrow } from '../utils';
 
 const requestC = type({
     body: exact(type({
@@ -11,14 +10,8 @@ const requestC = type({
     })),
 });
 
-export const PostUser: RouteHandlerMethod = async (request, reply): Promise<string | Error> => {
-    const result = requestC.decode(request);
-    if (isLeft(result)) {
-        reply.code(400);
-        return new Error(reporter.report(result).join('\n'));
-    }
-
-    const parsedRequest = result.right;
+export const PostUser: RouteHandlerMethod = async (request, reply): Promise<string> => {
+    const parsedRequest = decodeOrThrow(requestC, request, () => reply.status(400));
 
     return Users.create(parsedRequest.body);
 };
