@@ -1,0 +1,16 @@
+{
+  "name": "ts-node-template",
+  "private": true,
+  "description": "Template for a server written in TypeScript with no compilation step",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kinrany/ts-node-template.git"
+  },
+  "author": "kinrany",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Kinrany/ts-node-template/issues"
+  },
+  "homepage": "https://github.com/Kinrany/ts-node-template#readme"
+}
