@@ -2,7 +2,10 @@
   "name": "ts-node-template",
   "private": true,
   "description": "Template for a server written in TypeScript with no compilation step",
-  "main": "src/index.ts",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ts-node src/main.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kinrany/ts-node-template.git"
@@ -12,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Kinrany/ts-node-template/issues"
   },
-  "homepage": "https://github.com/Kinrany/ts-node-template#readme"
+  "homepage": "https://github.com/Kinrany/ts-node-template#readme",
+  "devDependencies": {
+    "typescript": "^4.1.0-dev.20200822"
+  },
+  "dependencies": {
+    "ts-node": "^9.0.0",
+    "tslib": "^2.0.1"
+  }
 }
