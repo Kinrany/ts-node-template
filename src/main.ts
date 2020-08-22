@@ -1,9 +1,7 @@
-import Fastify from 'fastify';
+import App from './app';
 
 async function main() {
-    const app = Fastify({ logger: true });
-
-    app.get('/', async (_request, _reply) => 'Hello world!');
+    const app = App();
 
     try {
         await app.listen(3000);
