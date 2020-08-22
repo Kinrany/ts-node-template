@@ -3,6 +3,9 @@ dependencies:
   fp-ts: 2.8.1
   io-ts: 2.2.10_fp-ts@2.8.1
   io-ts-reporters: 1.2.2_fp-ts@2.8.1+io-ts@2.2.10
+  io-ts-types: 0.5.10_cccfde2b620215f6c84af9e658362a1e
+  monocle-ts: 2.3.3_fp-ts@2.8.1
+  newtype-ts: 0.3.4_fp-ts@2.8.1+monocle-ts@2.3.3
   ramda: 0.27.1
   ts-node: 9.0.0_typescript@4.1.0-dev.20200822
   tslib: 2.0.1
@@ -198,6 +201,20 @@ packages:
       io-ts: ^2.0.0
     resolution:
       integrity: sha512-igASwWWkDY757OutNcM6zTtdJf/eTZYkoe2ymsX2qpm5bKZLo74FJYjsCtMQOEdY7dRHLLEulCyFQwdN69GBCg==
+  /io-ts-types/0.5.10_cccfde2b620215f6c84af9e658362a1e:
+    dependencies:
+      fp-ts: 2.8.1
+      io-ts: 2.2.10_fp-ts@2.8.1
+      monocle-ts: 2.3.3_fp-ts@2.8.1
+      newtype-ts: 0.3.4_fp-ts@2.8.1+monocle-ts@2.3.3
+    dev: false
+    peerDependencies:
+      fp-ts: ^2.0.0
+      io-ts: ^2.0.0
+      monocle-ts: ^2.0.0
+      newtype-ts: ^0.3.2
+    resolution:
+      integrity: sha512-QVkgEsW03wTSgZ/PCZyan0boHmkPWExQob4nZ3pOxX/YQ9iWXLGPHMqYxSV0OpE/ulJA01owqTvsvFv+SfmiGg==
   /io-ts/2.2.10_fp-ts@2.8.1:
     dependencies:
       fp-ts: 2.8.1
@@ -229,10 +246,28 @@ packages:
     dev: false
     resolution:
       integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==
+  /monocle-ts/2.3.3_fp-ts@2.8.1:
+    dependencies:
+      fp-ts: 2.8.1
+    dev: false
+    peerDependencies:
+      fp-ts: ^2.0.0
+    resolution:
+      integrity: sha512-pcQyauWO2vapxyZgbhTd73Dv8TmTELx1rL81bvrtPO2sUYTi1MIHmw3j/iMyeNaJwTmnGNAjqJpYV8Gq1Eu68g==
   /ms/2.1.2:
     dev: false
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  /newtype-ts/0.3.4_fp-ts@2.8.1+monocle-ts@2.3.3:
+    dependencies:
+      fp-ts: 2.8.1
+      monocle-ts: 2.3.3_fp-ts@2.8.1
+    dev: false
+    peerDependencies:
+      fp-ts: ^2.0.0
+      monocle-ts: ^2.0.0
+    resolution:
+      integrity: sha512-lFJnWAt0oXX1j1ErNy9RU5+FPNtVyzugHW2MchaaMiOeeS9LEmqAAOqyHPFQ0Uw895jStSYGSCslrByzYxFJYQ==
   /pino-std-serializers/2.5.0:
     dev: false
     resolution:
@@ -420,6 +455,9 @@ specifiers:
   fp-ts: ^2.8.1
   io-ts: ^2.2.10
   io-ts-reporters: ^1.2.2
+  io-ts-types: ^0.5.10
+  monocle-ts: ^2.3.3
+  newtype-ts: ^0.3.4
   ramda: ^0.27.1
   ts-node: ^9.0.0
   tslib: ^2.0.1
