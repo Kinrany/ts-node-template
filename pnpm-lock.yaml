@@ -2,6 +2,7 @@ dependencies:
   fastify: 3.2.1
   fp-ts: 2.8.1
   io-ts: 2.2.10_fp-ts@2.8.1
+  io-ts-reporters: 1.2.2_fp-ts@2.8.1+io-ts@2.2.10
   ramda: 0.27.1
   ts-node: 9.0.0_typescript@4.1.0-dev.20200822
   tslib: 2.0.1
@@ -187,6 +188,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
+  /io-ts-reporters/1.2.2_fp-ts@2.8.1+io-ts@2.2.10:
+    dependencies:
+      fp-ts: 2.8.1
+      io-ts: 2.2.10_fp-ts@2.8.1
+    dev: false
+    peerDependencies:
+      fp-ts: ^2.0.2
+      io-ts: ^2.0.0
+    resolution:
+      integrity: sha512-igASwWWkDY757OutNcM6zTtdJf/eTZYkoe2ymsX2qpm5bKZLo74FJYjsCtMQOEdY7dRHLLEulCyFQwdN69GBCg==
   /io-ts/2.2.10_fp-ts@2.8.1:
     dependencies:
       fp-ts: 2.8.1
@@ -408,6 +419,7 @@ specifiers:
   fastify: ^3.2.1
   fp-ts: ^2.8.1
   io-ts: ^2.2.10
+  io-ts-reporters: ^1.2.2
   ramda: ^0.27.1
   ts-node: ^9.0.0
   tslib: ^2.0.1

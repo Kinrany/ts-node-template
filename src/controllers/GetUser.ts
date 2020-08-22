@@ -8,7 +8,7 @@ const requestC = type({
     }),
 });
 
-export const GetUser: RouteHandlerMethod = async (request, reply) => {
+export const GetUser: RouteHandlerMethod = async (request, reply): Promise<Users.User> => {
     if (!requestC.is(request)) {
         reply.code(400);
         throw undefined;
