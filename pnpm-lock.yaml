@@ -1,5 +1,8 @@
 dependencies:
   fastify: 3.2.1
+  fp-ts: 2.8.1
+  io-ts: 2.2.10_fp-ts@2.8.1
+  ramda: 0.27.1
   ts-node: 9.0.0_typescript@4.1.0-dev.20200822
   tslib: 2.0.1
   uuid: 8.3.0
@@ -7,7 +10,6 @@ devDependencies:
   '@types/node': 14.6.0
   '@types/ramda': 0.27.14
   '@types/uuid': 8.3.0
-  ramda: 0.27.1
   typescript: 4.1.0-dev.20200822
 lockfileVersion: 5.1
 packages:
@@ -177,10 +179,22 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
+  /fp-ts/2.8.1:
+    dev: false
+    resolution:
+      integrity: sha512-HuA/6roEliHoBgEOLCKmGRcM90e2trW/ITZZ9d9P/ra7PreqQagC3Jg6OzqWkai13KUbG90b8QO9rHPBGK/ckw==
   /inherits/2.0.4:
     dev: false
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
+  /io-ts/2.2.10_fp-ts@2.8.1:
+    dependencies:
+      fp-ts: 2.8.1
+    dev: false
+    peerDependencies:
+      fp-ts: ^2.0.0
+    resolution:
+      integrity: sha512-WHx5jJe7hPpc6JoSIVbD+Xn6tYqe3cRvNpX24d8Wi15/kxhRWa8apo0Gzag6Xg99sCNY9OHKylw/Vhv0JAbNPQ==
   /ipaddr.js/1.9.1:
     dev: false
     engines:
@@ -248,7 +262,6 @@ packages:
     resolution:
       integrity: sha512-RyYpQ6Q5/drsJyOhrWHYMWTedvjTIat+FTwv0K4yoUxzvekw2aRHMQJLlnvt8UantkZg2++bEzD9EdxXqkWf4A==
   /ramda/0.27.1:
-    dev: true
     resolution:
       integrity: sha512-PgIdVpn5y5Yns8vqb8FzBUEYn98V3xcPgawAkkgj0YJ0qDsnHCiNmZYfOGMgOvoB0eWFLpYbhxUR3mxfDIMvpw==
   /readable-stream/3.6.0:
@@ -393,6 +406,8 @@ specifiers:
   '@types/ramda': ^0.27.14
   '@types/uuid': ^8.3.0
   fastify: ^3.2.1
+  fp-ts: ^2.8.1
+  io-ts: ^2.2.10
   ramda: ^0.27.1
   ts-node: ^9.0.0
   tslib: ^2.0.1

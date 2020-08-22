@@ -25,6 +25,8 @@
   },
   "dependencies": {
     "fastify": "^3.2.1",
+    "fp-ts": "^2.8.1",
+    "io-ts": "^2.2.10",
     "ramda": "^0.27.1",
     "ts-node": "^9.0.0",
     "tslib": "^2.0.1",
