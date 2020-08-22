@@ -1,5 +1,6 @@
 dependencies:
   fastify: 3.2.1
+  fastify-cors: 4.1.0
   fp-ts: 2.8.1
   io-ts: 2.2.10_fp-ts@2.8.1
   io-ts-reporters: 1.2.2_fp-ts@2.8.1+io-ts@2.2.10
@@ -127,10 +128,23 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
+  /fastify-cors/4.1.0:
+    dependencies:
+      fastify-plugin: 2.3.2
+      vary: 1.1.2
+    dev: false
+    resolution:
+      integrity: sha512-Vr4AgypDkRwG16cs1ORnYItZx6FMN+gCpHvP3/nzNZL1HFzf7U/NaSgmC784VqtK8yiqSXZEoTGCsmzeSp8JVw==
   /fastify-error/0.2.0:
     dev: false
     resolution:
       integrity: sha512-zabxsBatj59ROG0fhP36zNdc5Q1/eYeH9oSF9uvfrurZf8/JKfrJbMcIGrLpLWcf89rS6L91RHWm20A/X85hcA==
+  /fastify-plugin/2.3.2:
+    dependencies:
+      semver: 7.3.2
+    dev: false
+    resolution:
+      integrity: sha512-oii9LhQmbrEXDyTPDad59kZwSLN++ql9UE6+JWZLyPyibGrgYQPVu/sPJ1qhg68+76gk3MCWBjFX/Nhn/1wTxg==
   /fastify-warning/0.2.0:
     dev: false
     resolution:
@@ -355,6 +369,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-TcZvGMMy9vodEFSse30lWinkj+JgOBvPn8wRItpQRSayhc+4ssDs335uklkfvQQJgL/WvmHLVj4Ycv2s7QCQMg==
+  /semver/7.3.2:
+    dev: false
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
   /set-cookie-parser/2.4.6:
     dev: false
     resolution:
@@ -441,6 +462,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-fX6Z5o4m6XsXBdli9g7DtWgAx+osMsRRZFKma1mIUsLCz6vRvv+pz5VNbyu9UEDzpMWulZfvpgb/cmDXVulYFQ==
+  /vary/1.1.2:
+    dev: false
+    engines:
+      node: '>= 0.8'
+    resolution:
+      integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
   /yn/3.1.1:
     dev: false
     engines:
@@ -452,6 +479,7 @@ specifiers:
   '@types/ramda': ^0.27.14
   '@types/uuid': ^8.3.0
   fastify: ^3.2.1
+  fastify-cors: ^4.1.0
   fp-ts: ^2.8.1
   io-ts: ^2.2.10
   io-ts-reporters: ^1.2.2
