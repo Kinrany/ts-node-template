@@ -1,3 +1,6 @@
+export const user = 'user';
+export const userId = 'user_id';
+
 export type User = {
     user_id: string;
     name: string;
