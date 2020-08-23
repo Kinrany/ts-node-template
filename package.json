@@ -6,10 +6,12 @@
   "scripts": {
     "start": "ts-node -P ./tsconfig.json src/main",
     "watch": "LOG_PRETTY=true LOG_LEVEL=debug ts-node-dev -P ./tsconfig.json src/main",
+    "knex": "knex --knexfile ./src/knexfile.ts",
     "postgres-init": "initdb -D ./data -U postgres",
     "postgres-start": "POSTGRES_PASSWORD=password pg_ctl -D ./data start",
     "postgres-stop": "pg_ctl -D ./data stop",
-    "migrate": "knex --knexfile ./src/knexfile.ts migrate:latest"
+    "migrate": "npm run knex -- migrate:latest",
+    "migrate:down": "npm run knex -- migrate:down"
   },
   "repository": {
     "type": "git",
