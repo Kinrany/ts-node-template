@@ -21,9 +21,6 @@ pnpm install
 # initialize the database
 # see Development for using a local database
 
-# migrate the database
-pnpm run migrate
-
 # start the server
 # see ./src/env.ts for available parameters if you're not using a local database
 pnpm run start

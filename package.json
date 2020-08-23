@@ -4,7 +4,7 @@
   "description": "Template for a server written in TypeScript with no compilation step",
   "main": "src/main.ts",
   "scripts": {
-    "start": "ts-node -P ./tsconfig.json src/main",
+    "start": "npm run migrate && ts-node -P ./tsconfig.json src/main",
     "watch": "LOG_PRETTY=true LOG_LEVEL=debug ts-node-dev -P ./tsconfig.json src/main",
     "postgres-init": "initdb -D ./data -U postgres",
     "postgres-start": "POSTGRES_PASSWORD=password pg_ctl -D ./data start",
