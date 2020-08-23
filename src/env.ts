@@ -9,7 +9,7 @@ const envC = exact(type({
     DB_HOST: fromNullable(string, '127.0.0.1'),
     DB_PORT: fromNullable(NumberFromString, 5432),
     DB_USER: fromNullable(string, 'postgres'),
-    DB_PASSWORD: NonEmptyString,
+    DB_PASSWORD: fromNullable(NonEmptyString, 'password' as NonEmptyString),
     DB_DATABASE_NAME: fromNullable(string, 'postgres'),
 }));
 
