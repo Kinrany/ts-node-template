@@ -5,7 +5,10 @@
   "main": "src/main.ts",
   "scripts": {
     "start": "ts-node -P ./tsconfig.json src/main",
-    "watch": "LOG_PRETTY=true LOG_LEVEL=debug ts-node-dev -P ./tsconfig.json src/main"
+    "watch": "LOG_PRETTY=true LOG_LEVEL=debug ts-node-dev -P ./tsconfig.json src/main",
+    "postgres-init": "initdb -D ./data",
+    "postgres-start": "pg_ctl -D ./data start",
+    "postgres-stop": "pg_ctl -D ./data stop"
   },
   "repository": {
     "type": "git",
